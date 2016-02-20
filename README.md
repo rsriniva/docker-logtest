@@ -7,4 +7,8 @@ Each container will create a log file of it's own like <continer_id>-applog.log
 
 We set the hostname as a -D flag to Tomcat startup and use vars in log4j.properties to dynamically insert the hostname
 
-Also Extended PatternLayout class of Log4j to achieve hostname in logs to make it easy for parsing by ELK stack
+Also Extended PatternLayout class of Log4j to add hostname in log entries to make it easy for parsing by ELK stack
+
+Ex:
+**valhalla** 2016-02-20 15:39:04 INFO  DispatcherServlet:484 - FrameworkServlet 'hello-dispatcher': initialization started
+
