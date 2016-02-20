@@ -14,6 +14,8 @@ Ex:
 
 ## Build Instructions
 
+Copy setenv.sh to TOMCAT_HOME/bin
+
 mvn clean package
 
 cp target/logtest.war to Tomcat 8 webapps folder
